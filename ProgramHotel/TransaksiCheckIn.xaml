@@ -1,0 +1,52 @@
+﻿<Window x:Class="ProgramHotel.TransaksiCheckIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramHotel"
+        mc:Ignorable="d"
+        Title="TransaksiCheckIn" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Margin="4">
+                <TextBlock Width="100">Kode Check In</TextBlock>
+                <TextBox x:Name="kodecintxt" IsEnabled="False" Width="200" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="1">
+                <TextBlock Width="100">Customer</TextBlock>
+                <ComboBox x:Name="customerCb" Width="200" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="2">
+                <TextBlock Width="100">Tanggal Check In</TextBlock>
+                <DatePicker Name="tglCinDp" Width="200" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="3">
+                <TextBlock Width="100">Jam Check In</TextBlock>
+                <TextBox x:Name="jamCinTxt" IsEnabled="True" Width="200" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="4">
+                <TextBlock Width="100">Kamar</TextBlock>
+                <ComboBox x:Name="NoKamarCb" Width="200" />
+                <Button>Tambah Kamar</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="5">
+                <Button>Simpan</Button>
+            </StackPanel>
+        </Grid>
+        
+        <DataGrid x:Name="dataGrid" Grid.Row="1" />
+    </Grid>
+</Window>

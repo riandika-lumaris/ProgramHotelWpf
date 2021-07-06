@@ -1,0 +1,13 @@
+﻿<Window x:Class="ProgramHotel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramHotel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Click="Button_Click">Master Customer</Button>
+        <Button Click="TransakiButton_Click">Transaksi Check In</Button>
+    </StackPanel>
+</Window>
